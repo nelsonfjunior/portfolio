@@ -15,11 +15,15 @@
                 <h2>Nelson Junior</h2>
             </div>
             <ul class="nav-links">
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li><a href="#about" data-i18n="nav.about">Sobre</a></li>
+                <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+                <li><a href="#projects" data-i18n="nav.projects">Projetos</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contato</a></li>
             </ul>
+            <div class="lang-buttons">
+                <button class="lang-btn" data-lang="pt" aria-label="Português">PT</button>
+                <button class="lang-btn active" data-lang="en" aria-label="English">EN</button>
+            </div>
             <button class="nav-toggle" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
@@ -35,16 +39,16 @@
             <div class="container">
                 <div class="about-content">
                     <div class="about-text">
-                        <h1 class="about-title">Olá 👋, eu sou o Nelson</h1>
+                        <h1 class="about-title" data-i18n="about.title">Olá 👋, eu sou o Nelson</h1>
                         <p class="about-subtitle">Full Stack Developer</p>
-                        <p class="about-description">
+                        <p class="about-description" data-i18n="about.description">
                             Sou um desenvolvedor Full Stack com foco em criar soluções web e mobile inteligentes, escaláveis e de alto impacto. 
                             Tenho experiência prática com Java, Spring Boot, React Native e outras tecnologias modernas, além de integração com APIs e serviços em nuvem. 
                             Sou movido pelo desafio de transformar ideias em sistemas funcionais, com código limpo, testes bem estruturados e automações eficientes.
                         </p>
                         <div class="about-buttons">
-                            <a href="#projects" class="btn btn-primary">Ver meus trabalhos</a>
-                            <a href="#contact" class="btn btn-secondary">Vamos trocar ideia</a>
+                            <a href="#projects" class="btn btn-primary" data-i18n="about.button1">Ver meus trabalhos</a>
+                            <a href="#contact" class="btn btn-secondary" data-i18n="about.button2">Vamos trocar ideia</a>
                         </div>
                     </div>
                     <div class="about-image">
@@ -57,7 +61,7 @@
         <!-- Skills Section -->
         <section id="skills" class="section skills-section">
             <div class="container">
-                <h2 class="section-title">Tecnologias & Skills</h2>
+                <h2 class="section-title" data-i18n="skills.title">Tecnologias & Skills</h2>
                 <div class="skills-grid">
                     <div class="skill-item">
                         <div class="skill-icon">🌐</div>
@@ -86,15 +90,15 @@
         <!-- Projects Section -->
         <section id="projects" class="section projects-section">
             <div class="container">
-                <h2 class="section-title">Projetos em destaque</h2>
+                <h2 class="section-title" data-i18n="projects.title">Projetos em destaque</h2>
                 <div class="projects-grid">
                     <article class="project-card">
                         <div class="project-image">
                             <img src="/assets/foton-site.png" alt="Sistema de Landing Page">
                         </div>
                         <div class="project-content">
-                            <h3 class="project-title">Sistema de Landing Page</h3>
-                            <p class="project-description">
+                            <h3 class="project-title" data-i18n="projects.project1.title">Sistema de Landing Page</h3>
+                            <p class="project-description" data-i18n="projects.project1.description">
                                 Um sistema de landing page responsivo e otimizado para a empresa Foton, 
                                 que conta com um gerenciador de conteúdo para facilitar a atualização
                                 e manutenção do site.
@@ -106,7 +110,7 @@
                                 <span class="tech-tag">PHP</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://fotondobrasil.com.br/" target="_blank" class="project-link">Visualizar</a>
+                                <a href="https://fotondobrasil.com.br/" target="_blank" class="project-link" data-i18n="projects.view">Visualizar</a>
                             </div>
                         </div>
                     </article>
@@ -116,8 +120,8 @@
                             <img src="/assets/siadfou.png" alt="Siad FOU">
                         </div>
                         <div class="project-content">
-                            <h3 class="project-title">Siad FOU</h3>
-                            <p class="project-description">
+                            <h3 class="project-title" data-i18n="projects.project2.title">Siad FOU</h3>
+                            <p class="project-description" data-i18n="projects.project2.description">
                                 Um projeto desenvolvido para prefeitura, com intuito
                                 de gerenciar obras da cidade, permitindo o controle de
                                 documentos, alvarás e imagens.
@@ -128,7 +132,7 @@
                                 <span class="tech-tag">AWS</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://siadfou.com.br/" target="_blank" class="project-link">Visualizar</a>
+                                <a href="https://siadfou.com.br/" target="_blank" class="project-link" data-i18n="projects.view">Visualizar</a>
                             </div>
                         </div>
                     </article>
@@ -138,8 +142,8 @@
                             <img src="/assets/easytalk.png" alt="Easy Talk">
                         </div>
                         <div class="project-content">
-                            <h3 class="project-title">Easy Talk</h3>
-                            <p class="project-description">
+                            <h3 class="project-title" data-i18n="projects.project3.title">Easy Talk</h3>
+                            <p class="project-description" data-i18n="projects.project3.description">
                                 Plataforma de comunicação que permite a troca de mensagens
                                 por meio do Whatsapp por meio de um agente IA,
                                 facilitando a interação com os clientes.
@@ -149,7 +153,7 @@
                                 <span class="tech-tag">Node</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://easytalk.nelsonfjunior.shop/" target="_blank" class="project-link">Visualizar</a>
+                                <a href="https://easytalk.nelsonfjunior.com/" target="_blank" class="project-link" data-i18n="projects.view">Visualizar</a>
                             </div>
                         </div>
                     </article>
@@ -159,8 +163,8 @@
                             <img src="/assets/doutoragenda.png" alt="Doutor Agenda">
                         </div>
                         <div class="project-content">
-                            <h3 class="project-title">Doutor Agenda</h3>
-                            <p class="project-description">
+                            <h3 class="project-title" data-i18n="projects.project4.title">Doutor Agenda</h3>
+                            <p class="project-description" data-i18n="projects.project4.description">
                                 Sistema de agendamento de consultas médicas,
                                 que permite o cadastro de médicos, pacientes e agendamentos,
                                 facilitando a gestão de consultas e horários.
@@ -170,7 +174,7 @@
                                 <span class="tech-tag">Node</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://doutoragenda.nelsonfjunior.shop/" target="_blank" class="project-link">Visualizar</a>
+                                <a href="https://doutoragenda.nelsonfjunior.com/" target="_blank" class="project-link" data-i18n="projects.view">Visualizar</a>
                             </div>
                         </div>
                     </article>
@@ -180,8 +184,8 @@
                             <img src="/assets/relead.png" alt="Relead">
                         </div>
                         <div class="project-content">
-                            <h3 class="project-title">Relead</h3>
-                            <p class="project-description">
+                            <h3 class="project-title" data-i18n="projects.project5.title">Relead</h3>
+                            <p class="project-description" data-i18n="projects.project5.description">
                                 Sistema de gestão de pós-venda com automação de mensagens via WhatsApp, voltado para fidelização de clientes e aumento de vendas, oferecendo integrações, automação inteligente e relatórios estratégicos.
                             </p>
                             <div class="project-tech">
@@ -191,7 +195,7 @@
                                 <span class="tech-tag">PHP</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://relead.com.br/" target="_blank" class="project-link">Visualizar</a>
+                                <a href="https://relead.com.br/" target="_blank" class="project-link" data-i18n="projects.view">Visualizar</a>
                             </div>
                         </div>
                     </article>
@@ -201,8 +205,8 @@
                             <img src="/assets/pdm.png" alt="Portal das Missões">
                         </div>
                         <div class="project-content">
-                            <h3 class="project-title">Portal das Missões</h3>
-                            <p class="project-description">
+                            <h3 class="project-title" data-i18n="projects.project6.title">Portal das Missões</h3>
+                            <p class="project-description" data-i18n="projects.project6.description">
                                 Sistema completo que inclui portal público de notícias e painel administrativo para cadastro, edição e publicação de conteúdos, permitindo a gestão e organização das informações.
                             </p>
                             <div class="project-tech">
@@ -212,7 +216,7 @@
                                 <span class="tech-tag">PHP</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://portaldasmissoes.com.br/" target="_blank" class="project-link">Visualizar</a>
+                                <a href="https://portaldasmissoes.com.br/" target="_blank" class="project-link" data-i18n="projects.view">Visualizar</a>
                             </div>
                         </div>
                     </article>
@@ -223,8 +227,8 @@
         <!-- Contact Section -->
         <section id="contact" class="section contact-section">
             <div class="container">
-                <h2 class="section-title">Vamos trabalhar juntos</h2>
-                <p class="contact-description">
+                <h2 class="section-title" data-i18n="contact.title">Vamos trabalhar juntos</h2>
+                <p class="contact-description" data-i18n="contact.description">
                     Estou sempre interessado em novas oportunidades e projetos interessantes.
                     Vamos discutir como podemos dar vida às suas ideias.
                 </p>
@@ -249,7 +253,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Nelson Junior. Todos os direitos reservados.</p>
+            <p>&copy; 2024 Nelson Junior. <span data-i18n="footer.rights">Todos os direitos reservados.</span></p>
         </div>
     </footer>
 

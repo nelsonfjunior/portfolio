@@ -114,6 +114,43 @@ body {
     transition: var(--transition);
 }
 
+.lang-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-right: 1rem;
+}
+
+.lang-btn {
+    background: var(--background-primary);
+    border: 2px solid var(--border-color);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    transition: var(--transition);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    min-width: 50px;
+}
+
+.lang-btn:hover {
+    border-color: var(--primary-color);
+    background-color: var(--background-secondary);
+    color: var(--primary-color);
+}
+
+.lang-btn.active {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+.lang-btn.active:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: scale(1.05);
+}
+
 /* About Section */
 .about-section {
     padding-top: 8rem;
@@ -393,6 +430,17 @@ body {
 
     .nav-toggle {
         display: flex;
+    }
+
+    .lang-buttons {
+        margin-right: 0.5rem;
+        gap: 0.4rem;
+    }
+
+    .lang-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.85rem;
+        min-width: 45px;
     }
 
     .about-content {
